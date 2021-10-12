@@ -16,7 +16,7 @@ import java.util.Vector;
 
 public class EcgPlotWindow extends JInternalFrame implements AdjustmentListener {
 
-   SimulatorJNI ob = new SimulatorJNI();
+   //SimulatorJNI ob = new SimulatorJNI();
 
 
     /**************************************
@@ -595,7 +595,7 @@ public class EcgPlotWindow extends JInternalFrame implements AdjustmentListener 
 
 
 //new code for JNI 
-int res = ob.readData();
+int res = 0; //ob.readData();
 
 //System.out.println(res);
     
@@ -626,8 +626,8 @@ Count = Count+1;
 
 
 double data = Double.valueOf(tableValues.getValueAt(ecgAnimateCurRow, 1).toString()).doubleValue();
-//System.out.println(data);
-ob.writeData(data);
+System.out.println(data);
+//ob.writeData(data);
 
 //end
 
