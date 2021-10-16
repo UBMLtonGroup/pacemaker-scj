@@ -206,6 +206,7 @@ public class EcgCalc {
 
     /*
      * STANDARD DEVIATION CALCULATOR
+     * (sample stdev)
      */
     /* n-by-1 vector, calculate standard deviation */
     private double stdev(double[] x, int n){
